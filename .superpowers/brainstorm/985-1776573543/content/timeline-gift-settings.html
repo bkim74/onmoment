@@ -1,0 +1,204 @@
+<h2>S5. 타임라인 + S6. 선물 결과 + S7. 설정</h2>
+<p class="subtitle">여정 시각화, 완성된 선물, 앱 설정</p>
+
+<div class="section">
+<h3>S5. 타임라인 (40일 캘린더)</h3>
+<div class="mockup">
+  <div class="mockup-header">Timeline — Day 12 / 40</div>
+  <div class="mockup-body" style="padding: 0; background: linear-gradient(180deg, #faf5ff 0%, #f0f9ff 100%);">
+    <div style="max-width: 380px; margin: 0 auto; padding: 20px;">
+      <!-- Header -->
+      <div style="text-align: center; margin-bottom: 20px;">
+        <h3 style="font-size: 20px; color: #4c1d95; margin: 0;">순자님의 여정</h3>
+        <span style="font-size: 13px; color: #a78bfa;">12일째 · 28일 남음</span>
+      </div>
+
+      <!-- Calendar grid -->
+      <div style="display: grid; grid-template-columns: repeat(7, 1fr); gap: 6px; margin-bottom: 20px;">
+        <!-- Week labels -->
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">월</div>
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">화</div>
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">수</div>
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">목</div>
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">금</div>
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">토</div>
+        <div style="text-align: center; font-size: 10px; color: #9ca3af;">일</div>
+
+        <!-- Completed days -->
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">1</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">2</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">3</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">4</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">5</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">6</div>
+        <!-- Day 7 = milestone -->
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b, #ef4444); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer; box-shadow: 0 2px 8px rgba(245,158,11,0.4);">7<span style="font-size: 6px; position: absolute;">★</span></div>
+
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">8</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">9</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">10</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); color: white; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; cursor: pointer;">11</div>
+        <!-- Today -->
+        <div style="width: 36px; height: 36px; border-radius: 50%; border: 2px solid #8b5cf6; color: #8b5cf6; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto; font-weight: 700; cursor: pointer;">12</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">13</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">14</div>
+
+        <!-- Remaining -->
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">15</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">16</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">17</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">18</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">19</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">20</div>
+        <div style="width: 36px; height: 36px; border-radius: 50%; background: #f3f4f6; color: #d1d5db; display: flex; align-items: center; justify-content: center; font-size: 12px; margin: 0 auto;">21</div>
+      </div>
+
+      <!-- Legend -->
+      <div style="display: flex; justify-content: center; gap: 16px; font-size: 11px; color: #9ca3af; margin-bottom: 16px;">
+        <div style="display: flex; align-items: center; gap: 4px;">
+          <div style="width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1);"></div> 완료
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px;">
+          <div style="width: 10px; height: 10px; border-radius: 50%; border: 2px solid #8b5cf6;"></div> 오늘
+        </div>
+        <div style="display: flex; align-items: center; gap: 4px;">
+          <div style="width: 10px; height: 10px; border-radius: 50%; background: linear-gradient(135deg, #f59e0b, #ef4444);"></div> 마일스톤
+        </div>
+      </div>
+
+      <!-- Milestone Card (Day 7) -->
+      <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); border-radius: 16px; padding: 16px; border: 1px solid #f59e0b;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px;">
+          <span style="font-size: 20px;">⭐</span>
+          <span style="font-size: 14px; font-weight: 600; color: #92400e;">1주 정체성 카드</span>
+        </div>
+        <p style="font-size: 13px; color: #78350f; margin: 0; line-height: 1.5; font-style: italic;">
+          "첫 번째 패턴이 보입니다 — 당신의 이야기에는 <strong>따스함</strong>과 <strong>인내</strong>가 흐르고 있어요"
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h3>S6. 선물 결과 페이지 (자녀용)</h3>
+<div class="mockup">
+  <div class="mockup-header">Gift Page — 자녀가 보는 화면</div>
+  <div class="mockup-body" style="padding: 0; background: linear-gradient(180deg, #1e1b4b 0%, #312e81 50%, #4c1d95 100%);">
+    <div style="max-width: 380px; margin: 0 auto; padding: 40px 24px; text-align: center;">
+      <div style="font-size: 14px; color: #c4b5fd; margin-bottom: 24px;">순자님이 남기신 선물</div>
+
+      <!-- One Sentence -->
+      <div style="margin-bottom: 32px;">
+        <div style="font-size: 11px; color: #a78bfa; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px;">나만의 한 문장</div>
+        <h2 style="font-size: 24px; color: white; line-height: 1.6; font-weight: 300;">
+          "삶은 흔들림이 아니었고,<br>춤이었다"
+        </h2>
+        <div style="width: 40px; height: 2px; background: #8b5cf6; margin: 16px auto;"></div>
+      </div>
+
+      <!-- Highlights -->
+      <div style="text-align: left; margin-bottom: 24px;">
+        <div style="font-size: 12px; color: #a78bfa; margin-bottom: 12px;">하이라이트 음성</div>
+        <div style="display: flex; flex-direction: column; gap: 8px;">
+          <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; display: flex; align-items: center; gap: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: #8b5cf6; display: flex; align-items: center; justify-content: center; cursor: pointer;">▶</div>
+            <div>
+              <div style="font-size: 13px; color: white;">Day 7 — 처음 만난 날의 기억</div>
+              <div style="font-size: 11px; color: #a78bfa;">1:02</div>
+            </div>
+          </div>
+          <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; display: flex; align-items: center; gap: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: #8b5cf6; display: flex; align-items: center; justify-content: center; cursor: pointer;">▶</div>
+            <div>
+              <div style="font-size: 13px; color: white;">Day 21 — 가장 감사한 순간</div>
+              <div style="font-size: 11px; color: #a78bfa;">0:58</div>
+            </div>
+          </div>
+          <div style="background: rgba(255,255,255,0.1); border-radius: 10px; padding: 12px; display: flex; align-items: center; gap: 10px;">
+            <div style="width: 32px; height: 32px; border-radius: 50%; background: #8b5cf6; display: flex; align-items: center; justify-content: center; cursor: pointer;">▶</div>
+            <div>
+              <div style="font-size: 13px; color: white;">Day 40 — 사랑하는 이에게</div>
+              <div style="font-size: 11px; color: #a78bfa;">1:15</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Share -->
+      <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(139,92,246,0.3);">
+        <div style="background: #fee500; color: #3c1e1e; border-radius: 10px; padding: 12px; font-weight: 600; font-size: 14px; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px;">
+          💬 카카오로 공유하기
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h3>S7. 설정</h3>
+<div class="mockup">
+  <div class="mockup-header">Settings</div>
+  <div class="mockup-body" style="padding: 0; background: #faf5ff;">
+    <div style="max-width: 380px; margin: 0 auto; padding: 20px;">
+      <!-- Profile -->
+      <div style="background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px; display: flex; align-items: center; gap: 12px;">
+        <div style="width: 48px; height: 48px; border-radius: 50%; background: #e9d5ff; display: flex; align-items: center; justify-content: center; font-size: 20px;">👩</div>
+        <div>
+          <div style="font-size: 15px; font-weight: 600; color: #4c1d95;">순자님</div>
+          <div style="font-size: 12px; color: #9ca3af;">카카오 계정 연결됨</div>
+        </div>
+      </div>
+
+      <!-- API Keys -->
+      <div style="background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+        <div style="font-size: 14px; font-weight: 600; color: #4c1d95; margin-bottom: 12px;">API 키 설정</div>
+        <div style="margin-bottom: 10px;">
+          <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px;">OpenAI API Key</div>
+          <div style="background: #f3f4f6; border-radius: 8px; padding: 10px 12px; font-size: 13px; color: #9ca3af;">sk-••••••••••••3fGk</div>
+        </div>
+        <div>
+          <div style="font-size: 12px; color: #6b7280; margin-bottom: 4px;">Gemini API Key</div>
+          <div style="background: #f3f4f6; border-radius: 8px; padding: 10px 12px; font-size: 13px; color: #9ca3af;">AI••••••••••••7xHm</div>
+        </div>
+      </div>
+
+      <!-- Notifications -->
+      <div style="background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+          <div>
+            <div style="font-size: 14px; font-weight: 600; color: #4c1d95;">알림</div>
+            <div style="font-size: 12px; color: #9ca3af;">매일 녹음 리마인드</div>
+          </div>
+          <div style="width: 44px; height: 24px; border-radius: 12px; background: #8b5cf6; position: relative; cursor: pointer;">
+            <div style="width: 20px; height: 20px; border-radius: 50%; background: white; position: absolute; right: 2px; top: 2px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Data -->
+      <div style="background: white; border-radius: 12px; padding: 16px; margin-bottom: 12px;">
+        <div style="font-size: 14px; font-weight: 600; color: #4c1d95; margin-bottom: 10px;">데이터 관리</div>
+        <div style="display: flex; gap: 8px;">
+          <div style="flex: 1; background: #f3e8ff; border-radius: 8px; padding: 10px; text-align: center; font-size: 13px; color: #7c3aed; cursor: pointer;">📤 내보내기</div>
+          <div style="flex: 1; background: #f3e8ff; border-radius: 8px; padding: 10px; text-align: center; font-size: 13px; color: #7c3aed; cursor: pointer;">📥 가져오기</div>
+          <div style="flex: 1; background: #fef2f2; border-radius: 8px; padding: 10px; text-align: center; font-size: 13px; color: #ef4444; cursor: pointer;">🗑️ 초기화</div>
+        </div>
+      </div>
+
+      <!-- Safety -->
+      <div style="background: white; border-radius: 12px; padding: 16px;">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 16px;">🛡️</span>
+          <div style="font-size: 12px; color: #6b7280; line-height: 1.5;">
+            위기 상황 시 <strong style="color: #ef4444;">1393</strong> 자살예방 핫라인<br>
+            응급 상황 시 <strong style="color: #ef4444;">119</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

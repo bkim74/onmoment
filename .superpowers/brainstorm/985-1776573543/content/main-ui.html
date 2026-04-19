@@ -1,0 +1,171 @@
+<h2>S3. 메인 화면 (데일리 코어 루프)</h2>
+<p class="subtitle">시니어 친화적 — 2탭 이내 녹음 시작</p>
+
+<div class="section">
+<h3>메인 화면 목업</h3>
+<div class="mockup">
+  <div class="mockup-header">Main Screen — Day 12 / 40</div>
+  <div class="mockup-body" style="padding: 0; background: linear-gradient(180deg, #faf5ff 0%, #f0f9ff 100%);">
+    <div style="max-width: 380px; margin: 0 auto; padding: 24px 20px;">
+      <!-- Header -->
+      <div style="text-align: center; margin-bottom: 24px;">
+        <p style="font-size: 14px; color: #9ca3af; margin: 0;">안녕하세요</p>
+        <h2 style="font-size: 26px; color: #4c1d95; margin: 4px 0;">순자님</h2>
+        <div style="margin-top: 12px;">
+          <span style="font-size: 14px; color: #7c3aed; font-weight: 600;">Day 12 / 40</span>
+          <div style="background: #e9d5ff; border-radius: 100px; height: 8px; margin-top: 8px; overflow: hidden;">
+            <div style="background: linear-gradient(90deg, #8b5cf6, #6366f1); width: 30%; height: 100%; border-radius: 100px;"></div>
+          </div>
+          <span style="font-size: 12px; color: #a78bfa;">30%</span>
+        </div>
+      </div>
+
+      <!-- Weather Selection -->
+      <div style="background: rgba(255,255,255,0.8); border-radius: 16px; padding: 16px; margin-bottom: 20px; backdrop-filter: blur(10px);">
+        <p style="text-align: center; font-size: 16px; color: #6b7280; margin: 0 0 12px 0;">오늘의 마음 날씨는?</p>
+        <div style="display: flex; justify-content: center; gap: 12px;">
+          <div style="text-align: center; padding: 10px; border-radius: 12px; cursor: pointer;">
+            <div style="font-size: 28px;">☀️</div>
+            <div style="font-size: 11px; color: #9ca3af;">맑음</div>
+          </div>
+          <div style="text-align: center; padding: 10px; border-radius: 12px; background: #f3e8ff; border: 2px solid #8b5cf6; cursor: pointer;">
+            <div style="font-size: 28px;">⛅</div>
+            <div style="font-size: 11px; color: #7c3aed; font-weight: 600;">구름</div>
+          </div>
+          <div style="text-align: center; padding: 10px; border-radius: 12px; cursor: pointer;">
+            <div style="font-size: 28px;">☁️</div>
+            <div style="font-size: 11px; color: #9ca3af;">흐림</div>
+          </div>
+          <div style="text-align: center; padding: 10px; border-radius: 12px; cursor: pointer;">
+            <div style="font-size: 28px;">🌧️</div>
+            <div style="font-size: 11px; color: #9ca3af;">비</div>
+          </div>
+          <div style="text-align: center; padding: 10px; border-radius: 12px; cursor: pointer;">
+            <div style="font-size: 28px;">⛈️</div>
+            <div style="font-size: 11px; color: #9ca3af;">폭풍</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Record Button -->
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div style="width: 120px; height: 120px; border-radius: 50%; background: linear-gradient(135deg, #8b5cf6, #6366f1); display: flex; align-items: center; justify-content: center; margin: 0 auto; box-shadow: 0 8px 30px rgba(99, 102, 241, 0.4); cursor: pointer; transition: transform 0.2s;">
+          <div style="color: white; text-align: center;">
+            <div style="font-size: 36px;">🎤</div>
+            <div style="font-size: 13px; font-weight: 600; margin-top: 2px;">녹음하기</div>
+          </div>
+        </div>
+        <p style="font-size: 12px; color: #a78bfa; margin-top: 8px;">탭 한 번으로 시작</p>
+      </div>
+
+      <!-- Yesterday's response teaser -->
+      <div style="background: rgba(255,255,255,0.8); border-radius: 16px; padding: 16px; backdrop-filter: blur(10px);">
+        <p style="font-size: 13px; color: #9ca3af; margin: 0 0 8px 0;">어제의 구루 응답</p>
+        <p style="font-size: 14px; color: #4c1d95; margin: 0; line-height: 1.6; font-style: italic;">
+          "오늘 당신의 목소리에서 따스한 그리움이 들렸습니다. 그 그리움은 사랑의 또 다른 이름이에요."
+        </p>
+        <div style="text-align: right; margin-top: 8px;">
+          <span style="font-size: 12px; color: #8b5cf6; cursor: pointer;">전체 보기 →</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom Tab Bar -->
+    <div style="display: flex; justify-content: space-around; background: rgba(255,255,255,0.95); padding: 10px 0 16px; border-top: 1px solid #f3e8ff; backdrop-filter: blur(10px);">
+      <div style="text-align: center; color: #6366f1;">
+        <div style="font-size: 22px;">🏠</div>
+        <div style="font-size: 10px; font-weight: 600;">홈</div>
+      </div>
+      <div style="text-align: center; color: #d1d5db;">
+        <div style="font-size: 22px;">📅</div>
+        <div style="font-size: 10px;">타임라인</div>
+      </div>
+      <div style="text-align: center; color: #d1d5db;">
+        <div style="font-size: 22px;">⚙️</div>
+        <div style="font-size: 10px;">설정</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h3>녹음 중 상태</h3>
+<div class="mockup">
+  <div class="mockup-header">Recording — 0:34 / 1:00</div>
+  <div class="mockup-body" style="padding: 0; background: linear-gradient(180deg, #1e1b4b 0%, #312e81 100%);">
+    <div style="max-width: 380px; margin: 0 auto; padding: 40px 20px; text-align: center;">
+      <p style="color: #c4b5fd; font-size: 14px; margin: 0 0 24px 0;">오늘의 이야기를 들려주세요</p>
+
+      <!-- Waveform visualization -->
+      <div style="display: flex; align-items: center; justify-content: center; gap: 3px; height: 60px; margin-bottom: 24px;">
+        <div style="width: 4px; height: 20px; background: #8b5cf6; border-radius: 4px; animation: wave 1s ease-in-out infinite;"></div>
+        <div style="width: 4px; height: 35px; background: #8b5cf6; border-radius: 4px; animation: wave 1s ease-in-out 0.1s infinite;"></div>
+        <div style="width: 4px; height: 50px; background: #a78bfa; border-radius: 4px; animation: wave 1s ease-in-out 0.2s infinite;"></div>
+        <div style="width: 4px; height: 30px; background: #8b5cf6; border-radius: 4px; animation: wave 1s ease-in-out 0.3s infinite;"></div>
+        <div style="width: 4px; height: 45px; background: #a78bfa; border-radius: 4px; animation: wave 1s ease-in-out 0.4s infinite;"></div>
+        <div style="width: 4px; height: 25px; background: #8b5cf6; border-radius: 4px; animation: wave 1s ease-in-out 0.5s infinite;"></div>
+        <div style="width: 4px; height: 55px; background: #c4b5fd; border-radius: 4px; animation: wave 1s ease-in-out 0.6s infinite;"></div>
+        <div style="width: 4px; height: 35px; background: #8b5cf6; border-radius: 4px; animation: wave 1s ease-in-out 0.7s infinite;"></div>
+        <div style="width: 4px; height: 40px; background: #a78bfa; border-radius: 4px; animation: wave 1s ease-in-out 0.8s infinite;"></div>
+        <div style="width: 4px; height: 20px; background: #8b5cf6; border-radius: 4px; animation: wave 1s ease-in-out 0.9s infinite;"></div>
+      </div>
+
+      <!-- Timer -->
+      <div style="font-size: 48px; color: white; font-weight: 300; font-variant-numeric: tabular-nums; margin-bottom: 32px;">0:34</div>
+
+      <!-- Progress ring -->
+      <div style="width: 80px; height: 80px; border-radius: 50%; border: 4px solid rgba(139, 92, 246, 0.3); border-top-color: #8b5cf6; display: flex; align-items: center; justify-content: center; margin: 0 auto 24px;">
+        <div style="font-size: 24px;">⏸️</div>
+      </div>
+
+      <!-- Controls -->
+      <div style="display: flex; justify-content: center; gap: 32px; margin-top: 16px;">
+        <div style="text-align: center; cursor: pointer;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(255,255,255,0.1); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+            <span style="font-size: 20px;">🔄</span>
+          </div>
+          <span style="font-size: 11px; color: #a78bfa; display: block; margin-top: 4px;">다시 녹음</span>
+        </div>
+        <div style="text-align: center; cursor: pointer;">
+          <div style="width: 48px; height: 48px; border-radius: 50%; background: rgba(239, 68, 68, 0.2); display: flex; align-items: center; justify-content: center; margin: 0 auto;">
+            <span style="font-size: 20px;">⏹️</span>
+          </div>
+          <span style="font-size: 11px; color: #fca5a5; display: block; margin-top: 4px;">녹음 완료</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h3>감각적 디자인 키워드</h3>
+<div class="pros-cons">
+  <div class="pros">
+    <h4>Visual</h4>
+    <ul>
+      <li>보라~남색 그라디언트 (포근함)</li>
+      <li>둥근 모서리 (16px+)</li>
+      <li>글래스모피즘 (반투명 배경)</li>
+      <li>큰 터치 영역 (48px+)</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>Interaction</h4>
+    <ul>
+      <li>부드러운 페이드 전환</li>
+      <li>녹음 중 파형 애니메이션</li>
+      <li>진행률 바 애니메이션</li>
+      <li>햅틱 피드백 (지원 시)</li>
+    </ul>
+  </div>
+</div>
+</div>
+
+<style>
+  @keyframes wave {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.4); }
+  }
+</style>

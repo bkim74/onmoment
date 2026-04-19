@@ -1,0 +1,99 @@
+<h2>온순간 정적 웹사이트 — 전체 아키텍처</h2>
+<p class="subtitle">SPA + IndexedDB | React + Vite | 클라이언트 사이드 API 호출</p>
+
+<div class="section">
+<h3>시스템 구조도</h3>
+<div class="mockup">
+  <div class="mockup-header">Architecture Overview</div>
+  <div class="mockup-body" style="padding: 24px; font-size: 14px; line-height: 1.8;">
+    <div style="background: #f0f4ff; border-radius: 12px; padding: 16px; margin-bottom: 16px; text-align: center;">
+      <strong>브라우저 (단일 SPA)</strong>
+    </div>
+    <div style="display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; justify-content: center;">
+      <div style="background: #e8f5e9; border-radius: 8px; padding: 12px; flex: 1; min-width: 140px; text-align: center;">
+        <div style="font-weight: bold;">React Router</div>
+        <div style="font-size: 12px; color: #666;">6개 화면 라우팅</div>
+      </div>
+      <div style="background: #e8f5e9; border-radius: 8px; padding: 12px; flex: 1; min-width: 140px; text-align: center;">
+        <div style="font-weight: bold;">Zustand Store</div>
+        <div style="font-size: 12px; color: #666;">상태 관리</div>
+      </div>
+      <div style="background: #e8f5e9; border-radius: 8px; padding: 12px; flex: 1; min-width: 140px; text-align: center;">
+        <div style="font-weight: bold;">Tailwind CSS</div>
+        <div style="font-size: 12px; color: #666;">감각적 UI</div>
+      </div>
+    </div>
+    <div style="display: flex; gap: 24px; justify-content: center; margin-bottom: 16px;">
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="background: #fff3e0; border-radius: 8px; padding: 12px; width: 160px; text-align: center;">
+          <div style="font-weight: bold;">IndexedDB</div>
+          <div style="font-size: 12px; color: #666;">음성 파일 (.webm)</div>
+          <div style="font-size: 12px; color: #666;">AI 응답 텍스트</div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; align-items: center; gap: 8px;">
+        <div style="background: #fff3e0; border-radius: 8px; padding: 12px; width: 160px; text-align: center;">
+          <div style="font-weight: bold;">localStorage</div>
+          <div style="font-size: 12px; color: #666;">진행 상태</div>
+          <div style="font-size: 12px; color: #666;">설정 / 메타데이터</div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin: 12px 0; color: #999;">▼ API 호출 (클라이언트에서 직접) ▼</div>
+    <div style="display: flex; gap: 16px; justify-content: center;">
+      <div style="background: #fce4ec; border-radius: 8px; padding: 12px; width: 150px; text-align: center;">
+        <div style="font-weight: bold;">OpenAI Whisper</div>
+        <div style="font-size: 12px; color: #666;">STT 변환</div>
+      </div>
+      <div style="background: #fce4ec; border-radius: 8px; padding: 12px; width: 150px; text-align: center;">
+        <div style="font-weight: bold;">Gemini Flash</div>
+        <div style="font-size: 12px; color: #666;">감정 분석 + 구루 응답</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h3>핵심 파이프라인 (PRD 그대로)</h3>
+<div class="mockup">
+  <div class="mockup-header">Data Flow</div>
+  <div class="mockup-body" style="padding: 24px;">
+    <div style="display: flex; align-items: center; justify-content: center; gap: 8px; flex-wrap: wrap; font-size: 14px;">
+      <div style="background: #e3f2fd; border-radius: 8px; padding: 10px 16px; font-weight: bold;">🎤 1분 음성 녹음</div>
+      <div style="color: #999;">→</div>
+      <div style="background: #e8f5e9; border-radius: 8px; padding: 10px 16px; font-weight: bold;">Whisper STT</div>
+      <div style="color: #999;">→</div>
+      <div style="background: #fff3e0; border-radius: 8px; padding: 10px 16px; font-weight: bold;">Gemini 감정분석</div>
+      <div style="color: #999;">→</div>
+      <div style="background: #f3e5f5; border-radius: 8px; padding: 10px 16px; font-weight: bold;">UI 렌더링</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="section">
+<h3>기술 스택 요약</h3>
+<div class="pros-cons">
+  <div class="pros">
+    <h4>사용 기술</h4>
+    <ul>
+      <li><strong>React 18</strong> + Vite (빌드)</li>
+      <li><strong>React Router v6</strong> (SPA 라우팅)</li>
+      <li><strong>Zustand</strong> (상태 관리)</li>
+      <li><strong>Tailwind CSS</strong> (감각적 UI)</li>
+      <li><strong>idb-keyval</strong> (IndexedDB 래퍼)</li>
+      <li><strong>MediaRecorder API</strong> (음성 녹음)</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h4>외부 API</h4>
+    <ul>
+      <li><strong>OpenAI Whisper API</strong> (STT)</li>
+      <li><strong>Google Gemini Flash</strong> (AI 분석)</li>
+      <li>API 키 = .env 파일 관리</li>
+      <li>GitHub Pages 배포</li>
+    </ul>
+  </div>
+</div>
+</div>
