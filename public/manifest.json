@@ -1,0 +1,21 @@
+{
+  "name": "온순간 — OnMoment",
+  "short_name": "온순간",
+  "description": "매일 1분, 40일간의 음성 기록이 하나의 선물로",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf5ff",
+  "theme_color": "#8b5cf6",
+  "icons": [
+    {
+      "src": "/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
